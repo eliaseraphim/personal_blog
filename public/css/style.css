@@ -1,0 +1,19 @@
+/* /about */
+li.license-type {
+    width: 50px;
+    min-width: 50px;
+}
+
+li.app-type {
+    width: 400px;
+    min-width: 400px;
+}
+
+/* /create */
+#create_post_form .form-group label {
+    font-size: 1.5em;
+}
+
+#input_text {
+    resize: none;
+}
