@@ -5,90 +5,285 @@
 
 @section('content')
     <div id='about-content'>
-        <!-- Personal Information (limited of course) -->
-        <h1 id=section-one-header'>about</h1>
-        <h2 id=name'>elia deppe</h2>
-        <h3 id=occupation'>teacher / <a href='https://www.codeintheschools.org/'>code in the schools</a></h3>
-        <p id='description'>
-            my name is elia deppe.<br><br>
+        <!-- personal information (limited of course) -->
+        <h2 id='name'><mark>elia deppe</mark></h2>
+        <!-- info container -->
+        <div class='mt-3 mx-4'>
+            <h3 id=occupation'>teacher / <a href='https://www.codeintheschools.org/'>code in the schools</a></h3>
+            <p id='description'>
+                my name is elia deppe.<br>
+                i am a non-profit educator, programmer, and web designer. be kind to one another ^_^<br>
+            </p>
 
-            i am a non-profit educator, programmer, and web designer. be kind to one another ^_^<br><br>
-            location | baltimore<br>
-            image credit | SAPGOON (<a href='https://picrew.me/image_maker/27852'>picrew</a>)
+            <!-- contact information -->
+            <!-- utilizing list styling so that spacing is consistent for identifiers and details-->
+            <ul class='list-group-flush list-unstyled' id='contact-info'>
+                <!-- location -->
+                <li class='list-group-item m-0 p-0 border-0'>
+                    <ul class='list-inline'>
+                        <li class='list-inline-item border-right about-identifier'>
+                            <p class='m-0'>location</p>
+                        </li>
+                        <li class='list-inline-item'>
+                            <p class='m-0'>baltimore</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- phone -->
+                <li class='list-group-item m-0 p-0 border-0'>
+                    <ul class='list-inline'>
+                        <li class='list-inline-item border-right about-identifier'>
+                            <p class='m-0'>phone number</p>
+                        </li>
+                        <li class='list-inline-item'>
+                            <p class='m-0'>(443) 614 - 9263</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- personal email -->
+                <li class='list-group-item m-0 p-0 border-0'>
+                    <ul class='list-inline'>
+                        <li class='list-inline-item border-right about-identifier'>
+                            <p class='m-0'>email</p>
+                        </li>
+                        <li class='list-inline-item'>
+                            <p class='m-0'>elia.deppe7@gmail.com</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- work email -->
+                <li class='list-group-item m-0 p-0 border-0'>
+                    <ul class='list-inline'>
+                        <li class='list-inline-item border-right about-identifier'>
+                            <p class='m-0'>work email</p>
+                        </li>
+                        <li class='list-inline-item'>
+                            <p class='m-0'>elia@codeintheschools.org</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- image credit -->
+                <!-- currently, i am not using an image, but in case i do -->
+                <li class='list-group-item m-0 p-0 border-0'>
+                    <ul class='list-inline'>
+                        <li class='list-inline-item border-right about-identifier'>
+                            <p class='m-0'>image credit</p>
+                        </li>
+                        <li class='list-inline-item'>
+                            <p class='m-0'>SAPGOON (<a href='https://picrew.me/image_maker/27852'>picrew</a>)</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- about this site -->
+        <h2 id='section-two-header'><mark>about this</mark></h2>
+        <p class='mt-3 mx-4' id='section-two-info'>
+            this is a blogging site for my various hobbies. this is mostly for me to practice working with and using
+            the languages: html, css, and php and the frameworks: bootstrap and laravel. i also plan on practicing
+            implementing various front end designs.
         </p>
 
-        <!-- Work Information (limited again! gotcha) -->
-        <h2 id='section-two-header'>work</h2>
-        <p>
-            i am a lead instructor for the non-profit code in the schools, based in baltimore, maryland.<br><br>
-
+        <!-- work information (limited again! gotcha) -->
+        <h2 id='section-three-header'><mark>work</mark></h2>
+        <p class='mt-3 mx-4' id='section-three-info'>
+            i am a lead instructor for the non-profit code in the schools, based in baltimore, maryland.<br>
             i teach digital literacy, computer science, and python for a variety of in-school and out-of-school programs.
         </p>
 
-        <!-- Development -->
-        <h2 id='section-three-header'>development</h2>
-        <ul class='list-group-flush' >
+        <!-- hobbies -->
+        <h2 id='section-four-header'><mark>hobbies</mark></h2>
+        <p id='section-four-info'>
+            i engage in a few hobbies; mainly coding, writing, and creating visual artwork.
+        </p>
+
+        <!-- development projects -->
+        <h2 id='section-five-header'><mark>development</mark></h2>
+        <ul class='list-group'>
+            <!-- chess -->
             <li class='list-group-item development-project'>
-                <h3>chess</h3>
-                <h4>github / <a href='https://github.com/eliaseraphim/chess'>https://github.com/eliaseraphim/chess</a></h4>
-                <h4>language(s) / python</h4>
+                <!-- inline list to create bullet points -->
                 <ul class='list-inline'>
-                    <li class='list-inline-item license-type'>
-                        <h5 class='border-right'>MIT</h5>
+                    <!-- bullet point -->
+                    <li class='list-inline-item bullet-point-container'>
+                        <div class='rounded-circle bullet-point'></div>
                     </li>
-                    <li class='list-inline-item app-type'>
-                        <h5 class='border-right'>application type / terminal</h5>
-                    </li>
-                    <li class='list-inline-item dev-status'>
-                        <h5>status / <span class=''>in development</span></h5>
-                    </li>
-                </ul>
-            </li>
-            <li class='list-group-item development-project'>
-                <h3><a href='https://eliaseraphim.github.io/'>elia.seraphim.io</a></h3>
-                <h4>github / <a href='https://github.com/eliaseraphim/eliaseraphim.github.io'>https://github.com/eliaseraphim/eliaseraphim.github.io</a></h4>
-                <h4>language(s) / hmtl, css, javascript</h4>
-                <ul class='list-inline'>
-                    <li class='list-inline-item license-type'>
-                        <h5 class='border-right'>MIT</h5>
-                    </li>
-                    <li class='list-inline-item app-type'>
-                        <h5 class='border-right'>application type / web application</h5>
-                    </li>
+
+                    <!-- project information -->
                     <li class='list-inline-item'>
-                        <h5>status / <span class=''>in development</span></h5>
+                        <!-- name -->
+                        <h3>chess</h3>
+
+                        <!-- repository link -->
+                        <h4>github / <a href='https://github.com/eliaseraphim/chess'>https://github.com/eliaseraphim/chess</a></h4>
+
+                        <!-- languages used -->
+                        <h5>language(s) / python</h5>
+
+                        <!-- license, application type, and development status -->
+                        <ul class='list-inline'>
+                            <li class='list-inline-item license-type'>
+                                <h6 class='border-right'>MIT</h6>
+                            </li>
+                            <li class='list-inline-item app-type'>
+                                <h6 class='border-right'>application type / terminal</h6>
+                            </li>
+                            <li class='list-inline-item dev-status'>
+                                <h6>status / <span class=''>in development</span></h6>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
+
+            <!-- personal website -->
             <li class='list-group-item development-project'>
-                <h3><a href='https://twitter.com/eliaCITS_bot'>@eliaCITS_bot</a></h3>
-                <h4>github / <a href='https://github.com/eliaseraphim/gradient_bot'>https://github.com/eliaseraphim/gradient_bot</a></h4>
-                <h4>language(s) / python</h4>
+                <!-- inline list to create bullet points -->
                 <ul class='list-inline'>
-                    <li class='list-inline-item license-type'>
-                        <h5 class='border-right'>MIT</h5>
+                    <!-- bullet point -->
+                    <li class='list-inline-item bullet-point-container'>
+                        <div class='rounded-circle bullet-point'></div>
                     </li>
-                    <li class='list-inline-item app-type'>
-                        <h5 class='border-right'>application type / twitter bot</h5>
-                    </li>
-                    <li class='list-inline-item dev-status'>
-                        <h5>status / <span class=''>in development (working)</span></h5>
+
+                    <!-- project information -->
+                    <li class='list-inline-item'>
+                        <!-- name -->
+                        <h3><a href='https://eliaseraphim.github.io/'>eliaseraphim.github.io</a></h3>
+
+                        <!-- repository link -->
+                        <h4>github / <a href='https://github.com/eliaseraphim/eliaseraphim.github.io'>https://github.com/eliaseraphim/eliaseraphim.github.io</a></h4>
+
+                        <!-- languages used -->
+                        <h5>language(s) / hmtl, css, javascript</h5>
+
+                        <!-- license, application type, and development status -->
+                        <ul class='list-inline'>
+                            <li class='list-inline-item license-type'>
+                                <h6 class='border-right'>MIT</h6>
+                            </li>
+                            <li class='list-inline-item app-type'>
+                                <h6 class='border-right'>application type / web application</h6>
+                            </li>
+                            <li class='list-inline-item'>
+                                <h6>status / <span class=''>in development</span></h6>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
+
+            <!-- personal blog -->
             <li class='list-group-item development-project'>
-                <h3>Ligeia</h3>
-                <h4>github / <a href='https://github.com/eliaseraphim/Ligeia'>https://github.com/eliaseraphim/Ligeia</a></h4>
-                <h4>language / java</h4>
+                <!-- inline list to create bullet points -->
                 <ul class='list-inline'>
-                    <li class='list-inline-item license-type'>
-                        <h5 class='border-right'>MIT</h5>
+                    <!-- bullet point -->
+                    <li class='list-inline-item bullet-point-container'>
+                        <div class='rounded-circle bullet-point'></div>
                     </li>
-                    <li class='list-inline-item app-type'>
-                        <h5 class='border-right'>application type / android application</h5>
+
+                    <!-- project information -->
+                    <li class='list-inline-item'>
+                        <!-- name -->
+                        <h3>personal blog</h3>
+
+                        <!-- repository link -->
+                        <h4>github / <a href='https://github.com/eliaseraphim/personal_blog'>https://github.com/eliaseraphim/personal_blog</a></h4>
+
+                        <!-- languages used -->
+                        <h5>language(s) / html, css, javascript, php</h5>
+
+                        <!-- frameworks used -->
+                        <h5>framework(s) / laravel</h5>
+
+                        <!-- license, application type, and development status -->
+                        <ul class='list-inline'>
+                            <li class='list-inline-item license-type'>
+                                <h6 class='border-right'>MIT</h6>
+                            </li>
+                            <li class='list-inline-item app-type'>
+                                <h6 class='border-right'>application type / web application</h6>
+                            </li>
+                            <li class='list-inline-item dev-status'>
+                                <h6>status / <span class=''>in development</span></h6>
+                            </li>
+                        </ul>
                     </li>
-                    <li class='list-inline-item dev-status'>
-                        <h5>status / <span class=''>in development</span></h5>
+                </ul>
+            </li>
+
+            <!-- twitter bot -->
+            <li class='list-group-item development-project'>
+                <!-- inline list to create bullet points -->
+                <ul class='list-inline'>
+                    <!-- bullet point -->
+                    <li class='list-inline-item bullet-point-container'>
+                        <div class='rounded-circle bullet-point'></div>
+                    </li>
+
+                    <!-- project information -->
+                    <li class='list-inline-item'>
+                        <!-- name -->
+                        <h3><a href='https://twitter.com/eliaCITS_bot'>@eliaCITS_bot</a></h3>
+
+                        <!-- repository link -->
+                        <h4>github / <a href='https://github.com/eliaseraphim/gradient_bot'>https://github.com/eliaseraphim/gradient_bot</a></h4>
+
+                        <!-- languages used -->
+                        <h5>language(s) / python</h5>
+
+                        <!-- license, application type, and development status -->
+                        <ul class='list-inline'>
+                            <li class='list-inline-item license-type'>
+                                <h6 class='border-right'>MIT</h6>
+                            </li>
+                            <li class='list-inline-item app-type'>
+                                <h6 class='border-right'>application type / twitter bot</h6>
+                            </li>
+                            <li class='list-inline-item dev-status'>
+                                <h6>status / <span class=''>in development (working)</span></h6>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- android music app -->
+            <li class='list-group-item development-project'>
+                <!-- inline list to create bullet points -->
+                <ul class='list-inline'>
+                    <!-- bullet point -->
+                    <li class='list-inline-item bullet-point-container'>
+                        <div class='rounded-circle bullet-point'></div>
+                    </li>
+
+                    <!-- project information -->
+                    <li class='list-inline-item'>
+                        <!-- name -->
+                        <h3>ligeia</h3>
+
+                        <!-- repository link -->
+                        <h4>github / <a href='https://github.com/eliaseraphim/Ligeia'>https://github.com/eliaseraphim/Ligeia</a></h4>
+
+                        <!-- languages used -->
+                        <h5>language / java</h5>
+
+                        <!-- license, application type, and development status -->
+                        <ul class='list-inline'>
+                            <li class='list-inline-item license-type'>
+                                <h6 class='border-right'>MIT</h6>
+                            </li>
+                            <li class='list-inline-item app-type'>
+                                <h6 class='border-right'>application type / android application</h6>
+                            </li>
+                            <li class='list-inline-item dev-status'>
+                                <h6>status / <span class=''>in development</span></h6>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>

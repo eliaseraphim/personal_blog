@@ -20,26 +20,7 @@
         <link href='{{ asset('css/style.css') }}' rel='stylesheet'>
 
         <style>
-            body {
-                font-family: 'Ubuntu Mono', monospace;
-            }
 
-            .navbar {
-
-            }
-
-            .navbar-brand {
-                font-size: 2em;
-            }
-
-            .nav-link {
-                font-size: 1.1em;
-                letter-spacing: 2px;
-            }
-
-            #nav_bar {
-                min-height: 100px;
-            }
         </style>
     </head>
 
@@ -50,24 +31,24 @@
             <h1 class="navbar-brand">elia deppe | blog</h1>
             <ul class="navbar-nav">
                 <!-- Link to Home -->
-                <li class="nav-item">
+                <li class="nav-item ml-3 mr-1">
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <!-- Link to Archive -->
-                <li class="nav-item">
+                <li class="nav-item mx-1">
                     <a class="nav-link" href="#">Archive</a>
                 </li>
                 <!-- Link to Projects -->
-                <li class="nav-item">
+                <li class="nav-item mx-1">
                     <a class="nav-link" href="#">Projects</a>
                 </li>
                 <!-- Link to About -->
-                <li class="nav-item">
+                <li class="nav-item mx-1">
                     <a class="nav-link" href="/about">About</a>
                 </li>
 
                 <!-- Create Post -->
-                <li class="nav-item">
+                <li class="nav-item mx-1">
                     <a class="nav-link" href="/create">Create</a>
                 </li>
             </ul>

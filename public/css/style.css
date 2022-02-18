@@ -1,12 +1,131 @@
-/* /about */
+/*
+author: elia deppe
+filename: style.css
+
+main stylesheet
+
+color / theme - atom one dark
+    black        | #282c34
+    white        | #abb2bf
+    light red    | #e06c75
+    dark red     | #be5046
+    green        | #98c379
+    light yellow | #e5c07b
+    dark yellow  | #d19a66
+    blue         | #61afef
+    magenta      | #c678dd
+    cyan         | #56b6c2
+    gutter grey  | #4b5263
+    comment grey | #5c6370
+*/
+
+/* -------------------- main -------------------- */
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #282c34;
+}
+
+/* - text defaults */
+h1, h2, h3, h4, h5, h6, p {
+    color: #abb2bf;
+}
+
+/* - link defaults */
+a {
+    color: #e06c75;
+}
+
+a:hover {
+    color: #be5046;
+    text-decoration: none;
+}
+
+/* - navbar defaults */
+#nav_bar {
+    min-height: 100px;
+}
+
+.navbar-brand {
+    font-size: 2.25em;
+}
+
+/* - navbar items defaults */
+.nav-link {
+    font-size: 1.75em;
+    letter-spacing: 2px;
+}
+
+/* All lists should be transparent unless otherwise specified. */
+.list-group-item {
+    background-color: transparent;
+}
+
+.development-project {
+    border: none;
+}
+
+/* -------------------- /about -------------------- */
+#about-content > h2 {
+    font-size: 2em;
+}
+
+#about-content > h2 > mark {
+    display: inline-block;
+    width: 750px;
+    padding: 10px 0 10px 5px;
+
+    color: #282c34;
+}
+
+#about-content > #name > mark {
+    background-color: #61afef;
+}
+
+#about-content > #section-two-header > mark {
+    background-color: #56b6c2;
+}
+
+#about-content > #section-three-header > mark {
+    background-color: #98c379;
+}
+
+#about-content > #section-four-header > mark {
+    background-color: #e5c07b;
+}
+
+#about-content > #section-five-header > mark {
+    background-color: #d19a66;
+}
+
+#contact-info, #section-two-info, #section-three-info, #section-four-info {
+    margin-bottom: 50px;
+}
+
+.bullet-point-container {
+    height: 150px;
+}
+
+.bullet-point {
+    margin: 50px 5px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #60656F;
+}
+
+li.about-identifier {
+    min-width: 115px;
+}
+
 li.license-type {
     width: 50px;
     min-width: 50px;
 }
 
 li.app-type {
-    width: 400px;
-    min-width: 400px;
+    width: 325px;
+    min-width: 325px;
 }
 
 /* /create */
