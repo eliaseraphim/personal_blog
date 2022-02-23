@@ -26,6 +26,17 @@
 
     <!-- Body -->
     <body>
+        <!-- Errors -->
+        @if($errors->any())
+            <div class='alert alert-danger'>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error  }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-sm mt-0 pt-0" id="nav_bar">
             <h1 class="navbar-brand">elia deppe | blog</h1>
