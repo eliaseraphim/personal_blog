@@ -32,11 +32,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* - link defaults */
 a {
-    color: #e06c75;
+    color: #61afef;
 }
 
 a:hover {
-    color: #be5046;
+    color: #56b6c2;
     text-decoration: none;
 }
 
@@ -55,13 +55,46 @@ a:hover {
     letter-spacing: 2px;
 }
 
-/* All lists should be transparent unless otherwise specified. */
+/* all lists should be transparent unless otherwise specified. */
 .list-group-item {
     background-color: transparent;
 }
 
-.development-project {
-    border: none;
+/* background color classes */
+.highlight-color-text {
+    color: #282c34;
+}
+
+.blue-bg {
+    background-color: #61afef;
+}
+
+.cyan-bg {
+    background-color: #56b6c2;
+}
+
+.green-bg {
+    background-color: #98c379;
+}
+
+.light-yellow-bg {
+    background-color: #e5c07b;
+}
+
+.dark-yellow-bg {
+    background-color: #d19a66;
+}
+
+.light-red-bg {
+    background-color: #e06c75;
+}
+
+.dark-red-bg {
+    background-color: #be5046;
+}
+
+.magenta-bg {
+    background-color: #c678dd;
 }
 
 /* -------------------- /about -------------------- */
@@ -73,57 +106,41 @@ a:hover {
     display: inline-block;
     width: 750px;
     padding: 10px 0 10px 5px;
-
-    color: #282c34;
 }
 
-#about-content > #name > mark {
-    background-color: #61afef;
-}
-
-#about-content > #section-two-header > mark {
-    background-color: #56b6c2;
-}
-
-#about-content > #section-three-header > mark {
-    background-color: #98c379;
-}
-
-#about-content > #section-four-header > mark {
-    background-color: #e5c07b;
-}
-
-#about-content > #section-five-header > mark {
-    background-color: #d19a66;
-}
-
-#contact-info, #section-two-info, #section-three-info, #section-four-info {
+#about-content > .content-container {
+    width: 600px;
     margin-bottom: 50px;
 }
 
-.bullet-point-container {
-    height: 150px;
+#about-content p {
+    font-size: 1.2em;
 }
 
-.bullet-point {
-    margin: 50px 5px;
-
-    width: 50px;
-    height: 50px;
-
-    background-color: #60656F;
+#about-content li.about-identifier {
+    min-width: 200px;
 }
 
-li.about-identifier {
-    min-width: 115px;
+#about-content ul.list-group.development-projects {
+    width: 1000px;
 }
 
-li.license-type {
-    width: 50px;
-    min-width: 50px;
+#about-content li.list-group-item.development-project {
+    border-top: none;
+    border-bottom: 10px solid #5c6370;
+    border-left: none;
+    border-right: none;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-li.app-type {
+#about-content li.license-type {
+    width: 35px;
+    min-width: 35px;
+}
+
+#about-content li.app-type {
     width: 325px;
     min-width: 325px;
 }
@@ -135,4 +152,9 @@ li.app-type {
 
 #input_text {
     resize: none;
+}
+
+#create_post_form mark {
+    display: inline-block;
+    width: 500px;
 }

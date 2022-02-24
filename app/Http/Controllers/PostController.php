@@ -5,37 +5,42 @@ namespace App\Http\Controllers;
 use App\Post;
 use Dotenv\Exception\ValidationException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 
 class PostController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * display the index page of the blog.
+     *  - the index page retrieves on the 10 latest blog posts. All posts can be viewed in archive.
+     * @return View
      */
-    public function index()
+    public function index(): View
     {
-        $post = Post::all();
+        $post = DB::table('post')->latest()->take(10)->get();
         return view('index')->with('posts', $post);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * show the form for creating a new post
      *
-     * @return \Illuminate\Http\Response
+     * @return View
      */
-    public function create()
+    public function create(): View
     {
         return view('create');
     }
 
     /**
-     * Store a newly created resource in storage.
+     * store a newly created post in storage.
+     *  - the title and text of a post is stored within the database, under the table post
+     *  - the image, if present, is stored storage/app/public/images
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return View
+     * @throws \Illuminate\Validation\ValidationException
      */
-    public function store(Request $request)
+    public function store(Request $request): View
     {
         // validate that title and text are filled
         try {
@@ -82,9 +87,9 @@ class PostController extends Controller
 
         $post->save();
 
-        session()->flash('success', 'post created succesfully');
+        session()->flash('success', 'post created successfully');
 
-        return view('create');
+        return $this->index();
     }
 
     /**
